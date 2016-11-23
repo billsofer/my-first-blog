@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<head>
+	<meta charset="utf-8" />
+	<title>Bill's Blog</title>
+	<meta name="generator" content="BBEdit 10.5" />
+</head>
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<body>
+<div class = "page-header">
+	<h1><a href="/">Bill's Blog</a></h1>
+</div>
+<div class='container'>
+	<a href="{% url 'post_new' %}" class="top-menu"><h4>Click here to add a post entry 
+	<span class="glyphicon glyphicon-plus"></span></h4></a>
+</div>	
+
+
+<div class='container'>
+	{% block content %}
+		
+	{% endblock %}
+</div>
+</body>
+</html>

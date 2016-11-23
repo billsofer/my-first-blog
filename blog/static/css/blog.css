@@ -1,0 +1,14 @@
+h2 {
+	color:blue;
+	}
+	
+h3 {
+	color:red;
+	font-family: 'Comic Sans MS', cursive;
+	}
+	
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
