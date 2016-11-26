@@ -17,15 +17,9 @@
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <body>
 <div class = "page-header">
-	<h1><a href="/">Billy's Blog</a></h1>
-	<img class="img-circle" src="{% static 'images/me.jpg' %}" width="150" height="200"/>
+	<h1><a href="/">Bill's Blog</a></h1>
+	<img class="img-thumbnail" src="{% static 'images/molecule.png' %}" width="200" height="190"/>
 </div>
-<div class='container'>
-	<a href="{% url 'post_new' %}" class="top-menu">
-	<h4><span class="glyphicon glyphicon-plus"></span> Click here to add a post entry </h4></a>
-</div>	
-
-
 <div class='container'>
 	{% block content %}
 		
