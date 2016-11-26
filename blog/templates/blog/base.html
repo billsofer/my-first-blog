@@ -18,10 +18,11 @@
 <body>
 <div class = "page-header">
 	<h1><a href="/">Billy's Blog</a></h1>
+	<img class="img-circle" src="{% static 'images/me.jpg' %}" width="150" height="200"/>
 </div>
 <div class='container'>
-	<a href="{% url 'post_new' %}" class="top-menu"><h4>Click here to add a post entry 
-	<span class="glyphicon glyphicon-plus"></span></h4></a>
+	<a href="{% url 'post_new' %}" class="top-menu">
+	<h4><span class="glyphicon glyphicon-plus"></span> Click here to add a post entry </h4></a>
 </div>	
 
 
