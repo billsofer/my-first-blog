@@ -10,8 +10,8 @@
 				<h2>{{ post.title }}</h2>
 				{{ post.text|linebreaksbr }}
 			</div>
-			<p></p>
-			<a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}">
-			<p>Delete</p> <span class="glyphicon glyphicon-remove"></span></a>
+			
+			<!-- <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}">
+			<p>Delete</p> <span class="glyphicon glyphicon-remove"></span></a> --!>
 
 		{% endblock content %}
