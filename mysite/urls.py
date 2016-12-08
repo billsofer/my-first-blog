@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from Intro.views import intro
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
+    # url(r'', include('blog.urls')),
+    url(r'^photos', include('photos.urls')),
+    url(r'^$', intro, name="intro"),
 ]
