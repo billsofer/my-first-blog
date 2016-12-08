@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!doctypte html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	{% block intro_css %}{% endblock intro_css %}
+	<head>
+		<title>Bill's Site </title>
+	</head>
+	<body>
+		<div class='container-fluid'>
+		<div class='jumbotron'>
+			<h2>Bill's site </h2>
+			<p>Current date/time: {{ currentdate}}
+		</div>
+		<hr>
+	{% block intro_content %}
+	{% endblock intro_content %}
+	
+	{% block intro_footer %}
+	{% endblock intro_footer %}
+	</body>
+</html>
