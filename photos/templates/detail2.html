@@ -1,16 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'blog/base_blog.html' %}
 {% load staticfiles %}
 	{% block css %}
-	<!-- <style type="text/css">
-	body { 
-		background-color:black; 
-		}
-		</style> -->
 	<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
 	{% endblock css %}
 	
 	{% block content %}
-		<a href="{% url 'index' %}" class="btn-danger btn-lg">Home</a>	
 	<div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
 		<h3>{{picture.name}}</h3>
 		<h5>{{picture.date}}, {{picture.location}}</h5>

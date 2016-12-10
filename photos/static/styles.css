@@ -1,11 +1,21 @@
-h2 {
+h2, h5 {
     color: blue;
+    font-family: Verdana, Geneva, sans-serif;
 }
-h3, h4, h5 {
+h3, h4 {
 	color: white;
 }
+p {
+	color:white;
+}
+
+a {
+	color:darkblue;
+}
+
 body { 
-background-color:black; 
+background-color:slategray; 
+font-family: Georgia, serif;
 }
 
 img.medium {

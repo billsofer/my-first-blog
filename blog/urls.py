@@ -3,5 +3,5 @@ from blog.views import post_list, post_detail
 
 urlpatterns = [
     url(r'^$', post_list, name='post_new'),
-    url(r'^post/(?P<pk>\d+)/$', post_detail, name='detail'),
+    url(r'/(?P<pk>\d+)/$', post_detail, name='detail'),
 ]

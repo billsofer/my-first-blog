@@ -20,7 +20,7 @@ from Intro.views import intro
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # url(r'', include('blog.urls')),
+    url(r'^post', include('blog.urls')),
     url(r'^photos', include('photos.urls')),
     url(r'^$', intro, name="intro"),
 ]

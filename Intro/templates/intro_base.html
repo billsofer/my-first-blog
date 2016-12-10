@@ -11,10 +11,25 @@
 		<title>Bill's Site </title>
 	</head>
 	<body>
-		<div class='container-fluid'>
+		<nav class = "navbar navbar-inverse">
+			<div class = "container-fluid">
+				<div class = "navbar-header">
+				<div>
+					<ul class = "nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="{% url 'index' %}">Photos</a></li>
+						<li><a href="{% url 'post_new'%}">Blog</a></li>
+						<li><a href="#">Books</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+						
+		<div class='container'>
+		<p></br></p>
 		<div class='jumbotron'>
-			<h2>Bill's site </h2>
-			<p>Current date/time: {{ currentdate}}
+			<h2>Bill's Website </h2>
+			<h5>Current date/time: {{ currentdate}}</h5>
 		</div>
 		<hr>
 	{% block intro_content %}
