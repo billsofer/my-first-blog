@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block nav %}
+						<li><a href="{% url 'intro' %}"><h3>Home</h3></a></li>
+						<li class="active"><a href="{% url 'index' %}"><h3>Photos</h3></a></li>
+						<li><a href="{% url 'post_new'%}"><h3>Blog</h3></a></li>
+						<li><a href="{% url 'books'%}"><h3>Books</h3></a></li>
+						<li><a href="{% url 'classes'%}"><h3>Classes</h3></a></li>
+						
+{% endblock nav %}
+
+</div>
+</body>
+</html>

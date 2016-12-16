@@ -1,4 +1,8 @@
 {% load staticfiles %}
+<!-- This file is the main base template for all the html files in the
+project. It is reached because I've put 
+"STATICFILES_DIRS = ('/Users/williamsofer/Desktop/djangogirls/static'),"
+in the settings file. Otherwise it didn't work -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,41 +11,36 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
+<link href="{% static 'styles.css' %}" type="text/css" rel="stylesheet" />
 <head>
 	<meta charset="utf-8" />
 	<title>Bill's Blog</title>
 	<meta name="generator" content="BBEdit 10.5" />
 </head>
-{% block css %}
-{% endblock css %}
-<body>
-	<nav class = "navbar navbar-inverse">
+	<body>
+		<nav class = "navbar navbar-inverse">
 			<div class = "container-fluid">
 				<div class = "navbar-header">
 				<div>
 					<ul class = "nav navbar-nav">
-						<li><a href="{% url 'intro' %}">Home</a></li>
-						<li><a href="{% url 'index' %}">Photos</a></li>
-						<li class="active"><a href="{% url 'post_new'%}">Blog</a></li>
-						<li><a href="#">Books</a></li>
-						<li><a href="{% url 'classes'%}">Classes</a></li>
-						<li class="active"><a href="{% url 'post_list'%}">Blog</a></li>
-
+{% block nav %}
+{% endblock nav %}
 					</ul>
 				</div>
 			</div>
 		</nav>
+						
 		<div class='container'>
+		<p></br></p>
 		<div class='jumbotron'>
-			<h2>My Blog </h2>
-			<h5>Current date/time: {{ currentdate}}</h5>
+			<h2>Bill's Website </h2>
+			<h5>Current date/time:  {{ currentdate}}</h5>
 		</div>
 		<hr>
-	{% block content %}
+{% block content %}
 		
-	{% endblock %}
+{% endblock content %}
+
 </div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+<<<<<<< Updated upstream
 
 class Course(models.Model):
 	name = models.CharField(max_length=128)
@@ -20,3 +21,5 @@ class Slides(models.Model):
 	
 	def __str__(self):
 		return self.session
+=======
+>>>>>>> Stashed changes
